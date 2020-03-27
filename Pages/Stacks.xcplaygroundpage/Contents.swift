@@ -1,0 +1,4 @@
+import Faundation
+
+struct Stack {}
+
