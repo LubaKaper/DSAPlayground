@@ -3,5 +3,14 @@
     <pages>
         <page name='Stacks'/>
         <page name='Untitled Page'/>
+        <page name='BinarySearch'/>
+        <page name='LinkedList'/>
+        <page name='RecursionFactorial'/>
+        <page name='StringManipulations'/>
+        <page name='Soring.InsertionSort'/>
+        <page name='BinaryTreeDepthFirstTraversal'/>
+        <page name='Untitled Page 2'/>
+        <page name='BubbleSort'/>
+        <page name='MergeSort'/>
     </pages>
 </playground>
