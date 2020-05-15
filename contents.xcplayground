@@ -2,7 +2,7 @@
 <playground version='6.0' target-platform='ios'>
     <pages>
         <page name='Stacks'/>
-        <page name='Untitled Page'/>
+        <page name='LinkedListCycle'/>
         <page name='BinarySearch'/>
         <page name='LinkedList'/>
         <page name='RecursionFactorial'/>
@@ -12,5 +12,11 @@
         <page name='Untitled Page 2'/>
         <page name='BubbleSort'/>
         <page name='MergeSort'/>
+        <page name='QUickSort'/>
+        <page name='InOutFunctions'/>
+        <page name='Queues'/>
+        <page name='ArrayOfIntsSum'/>
+        <page name='arraySmallerNumbersThenCurrent'/>
+        <page name='RansomeNoteCanConstructStringStuff'/>
     </pages>
 </playground>

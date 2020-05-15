@@ -115,3 +115,36 @@ threeNode2.rightChild = fiveNode2
 treeNode2.preOrderTraversal { (node) in
     print(node.value, terminator: " ") //Encyclopedia, Science, Culture, Art, Craft
 }
+
+
+//func maxDepth(_ root: Node<Int>?) -> Int {
+//  guard let root = root else {
+//    return 0
+//  }
+//
+//  let leftDepth = maxDepth(root.leftNode)
+//  let rightDepth = maxDepth(root.rightNode)
+//  
+//  if leftDepth > rightDepth {
+//    return leftDepth + 1
+//  } else {
+//    return rightDepth + 1
+//  }
+//}
+
+//class Solution {
+//    func maxDepth(_ root: TreeNode?) -> Int {
+//
+//        guard let root = root else {return 0}
+//        // base case
+//        if root.left == nil && root.right == nil {
+//          return 1
+//        }
+//        let leftSide = maxDepth(root.left) + 1 // 3 9 (1 + 1)
+//        let rightSide = maxDepth(root.right) + 1 // (1 + 1 + 1)
+//
+//
+//        return max(leftSide, rightSide)
+//    }
+//}
+

@@ -83,17 +83,18 @@ print(countCharacters(["cat","bt","hat","tree"], "atach"))
 
 //===============================================================
 // Polindrome
-let str = "racecar"
+let str = "racecare"
 func isPolindrome(str: String) -> Bool {
     var newStr = ""
     for char in str {
         newStr = String(char) + newStr
-        
+        print(char)
+        print(newStr)
     }
     if newStr == str {
         return true
     } else {
-        return true
+        return false
     }
 }
 print(isPolindrome(str: str))

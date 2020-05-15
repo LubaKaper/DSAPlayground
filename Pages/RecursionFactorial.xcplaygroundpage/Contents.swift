@@ -10,7 +10,7 @@ guard n > 1 else {
 return n * factorial(n: n-1)
 }
 
-print(factorial(n: 3))
+print(factorial(n: 1))
 // 0, 1, 1, 2, 3, 5, 8....
 // finding fibonacci sum at the nth
 // nth number the 8000th number, millionth

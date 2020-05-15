@@ -196,3 +196,53 @@ func largestNumber(_ node: LLNode) -> Int {
 
 print(largestNumber(node1))
 
+// REVERSED LINKED LIST NEEDED!!!!!
+
+public class ListNode<Int> {
+    public var val: Int
+    public var next: ListNode?
+    public init(_ val: Int) {
+        self.val = val
+        self.next = nil
+    }
+}
+extension ListNode: CustomStringConvertible {
+    public var description: String {
+        guard let next = next else {
+            // if we have only 1 node
+            return "\(val) -> nil"
+        }
+        // if we have more then 1 node
+        return "\(val) -> \(next)"
+    }
+}
+
+func reverseList(_ head: ListNode<Int>?) -> ListNode<Int>? {
+        
+        var current = head
+        var next: ListNode<Int>?
+        var previous: ListNode<Int>?
+        
+        while current != nil {
+            next = current?.next
+            current?.next = previous
+            previous = current
+            current = next
+            
+        }
+        
+        return previous
+    }
+
+let num1 = ListNode(1)
+let num2 = ListNode(2)
+let num3 = ListNode(3)
+let num4 = ListNode(4)
+let num5 = ListNode(5)
+
+num1.next = num2
+num2.next = num3
+num3.next = num4
+num4.next = num5
+print("LinkedList = \(num1)")
+print("ReverseList = \(reverseList(num1)!)")
