@@ -18,5 +18,9 @@
         <page name='ArrayOfIntsSum'/>
         <page name='arraySmallerNumbersThenCurrent'/>
         <page name='RansomeNoteCanConstructStringStuff'/>
+        <page name='FlipImage'/>
+        <page name='HashTable'/>
+        <page name='BinarySearchTree'/>
+        <page name='DoublyLinkedList'/>
     </pages>
 </playground>
