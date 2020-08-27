@@ -22,5 +22,6 @@
         <page name='HashTable'/>
         <page name='BinarySearchTree'/>
         <page name='DoublyLinkedList'/>
+        <page name='RecursionBinaryReversesLL'/>
     </pages>
 </playground>

@@ -52,8 +52,12 @@ print("There are \(queueCopy.count) fellows left in queueCopy")
 //    return nil
 //}
 func smallestElement<T: Comparable>(in q: Queue<T>) -> T? {
+    // making a copy of queue
     var smallestQueue = q
+    
+    // assigning smallest element to the first element in queue
     guard var smallest = smallestQueue.peek else { return nil }
+    // going through each value of the queue by dequeing, reassigning smallestValue to value, if value is smaller
     while let value = smallestQueue.dequeue() {
         if value <= smallest {
             smallest = value

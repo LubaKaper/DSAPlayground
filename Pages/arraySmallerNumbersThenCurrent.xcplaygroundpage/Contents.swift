@@ -32,6 +32,6 @@ func smallerNumbersThanCurrent(_ nums: [Int]) -> [Int] {
     }
 
 
-
+print(smallerNumbersThanCurrent([1,2,3,4,5]))
 
 

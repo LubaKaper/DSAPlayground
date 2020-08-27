@@ -24,7 +24,7 @@ func canConstruct(_ ransomNote: String, _ magazine: String) -> Bool {
     var ransomDict = [Character: Int]()
     var magDict = [Character: Int]()
     for char in ransomNote {
-        ransomDict[char] = (ransomDict[char] ?? 0) + 1
+        ransomDict[char] = ransomDict[char] ?? 0  + 1
     }
     for char in magazine {
         magDict[char] = (magDict[char] ?? 0) + 1
@@ -36,3 +36,6 @@ func canConstruct(_ ransomNote: String, _ magazine: String) -> Bool {
     }
     return true
 }
+print(canConstruct("aa", "ab"))
+
+// this missing a condition that each letter can only be used once

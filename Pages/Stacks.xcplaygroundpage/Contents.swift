@@ -224,3 +224,7 @@ print(stack2.getMin())
 //elements.push(4)
 //
 //print(sumOfElements(in: elements) ?? 0)
+
+var x: Int?
+let y = x ?? 5
+print(y)
