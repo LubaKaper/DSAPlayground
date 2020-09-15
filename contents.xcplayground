@@ -23,5 +23,7 @@
         <page name='BinarySearchTree'/>
         <page name='DoublyLinkedList'/>
         <page name='RecursionBinaryReversesLL'/>
+        <page name='Mztrix'/>
+        <page name='VariadicParametersInFunction'/>
     </pages>
 </playground>

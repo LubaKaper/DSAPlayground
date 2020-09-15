@@ -17,7 +17,7 @@ import UIKit
     public var next: ListNode?
     public init(_ val: Int) {
          self.val = val
-         self.next = nil
+         self.next = nil 
      }
  }
 
@@ -26,14 +26,14 @@ class Solution {
 
         // 2 pointer one makes 1 step, another 2 steps
         var slowPointer = head
-        var fastPonter = head
+        var fastPointer = head
 
         while fastPointer != nil && fastPointer?.next != nil {
           slowPointer = slowPointer?.next
           fastPointer = fastPointer?.next?.next
           // "===" used instead of equatabl
           if slowPointer === fastPointer {
-            rteturn true
+            return true
 
           }
 

@@ -1,7 +1,7 @@
 //: [Previous](@previous)
 
 import Foundation
-​
+
 /*
  Recursion
  
@@ -27,7 +27,7 @@ import Foundation
  - Recursive Mindset
     - The idea is that the bigger problem cannot be solved without first knowing the solution to a smaller version of the problem. This continues until the smallest problem (the base case) has been solved.
  */
-​
+
 func cheers(_ num: Int) {
     // Base case
     guard num > 1 else {
@@ -38,11 +38,10 @@ func cheers(_ num: Int) {
     print("Hip, ", terminator: "")
     cheers(num - 1) // Progression
 }
-​
+
 // Cheers(3) cannot complete without knowing the value of Cheers(2), and Cheers(2) cannot complete without knowing the value of Cheers(1).
-​
 // cheers(3)
-​
+
 /*
  - Fibonacci has an expensive recursive solution, but we can save it!
  Memoization
@@ -50,7 +49,7 @@ func cheers(_ num: Int) {
  Dynamic Programming
     - The combination of Memoization and recursion.
  */
-​
+
 var fibs: [Int:Int] = [:]
 func fibonacci(_ n: Int) -> Int {
     // If we have seen the value before, return the value.
@@ -65,9 +64,8 @@ func fibonacci(_ n: Int) -> Int {
     fibs[n] = fibonacciValue
     return fibonacciValue
 }
-​
 fibonacci(15)
-​
+
 /*
  fibonacci(0) = 0
  fibonacci(1) = 1
@@ -78,21 +76,21 @@ fibonacci(15)
  
  fibonacci(5) = (fibonacci(2) + fibonacci(1)) + fibonacci(2)) + (fibonacci(2) + fibonacci(1))
  */
-​
+
 // 5! = 5 * 4 * 3 * 2 * 1
 func factorial(_ num: Int) -> Int {
     guard num > 1 else { return 1 } // base case
     
     return num * factorial(num - 1) // Progressing toward a base case
 }
-​
+
 // print(factorial(5))
 // factorial(5) = 5 * factorial(4) -> Pause
 // factorial(4) = 5 * 4 * factorial(3) -> Pause
 // factorial(3) = 5 * 4 * 3 * factorial(2) -> Pause
 // factorial(2) = 5 * 4 * 3 * 2 * factorial(1) -> Pause
 // factorial(1) = 1
-​
+
 // Returns the index of the value, if it exists.
 // Returns -1 if it doesn't.
 func binarySearch(_ arr: [Int], _ start: Int, _ end: Int, _ target: Int) -> Int {
@@ -121,9 +119,8 @@ func binarySearch(_ arr: [Int], _ start: Int, _ end: Int, _ target: Int) -> Int 
     }
     
 }
-​
 // print(binarySearch([1,2,3,4,5,6,7,8,9,10], 0, 9, 7))
-​
+
 /*
  
  First call: binarySearch([1,2,3,4,5,6,7,8,9,10], 0, 9, 7)
@@ -131,7 +128,7 @@ func binarySearch(_ arr: [Int], _ start: Int, _ end: Int, _ target: Int) -> Int 
  Third call: binarySearch([6,7,8], 5, 7, 7) -> return middleIndex = 6
  
  */
-​
+
 class Node<T> {
     
     public var value: T
@@ -142,7 +139,6 @@ class Node<T> {
         self.next = nil
     }
 }
-​
 extension Node: CustomStringConvertible {
     
     public var description: String {
@@ -154,37 +150,36 @@ extension Node: CustomStringConvertible {
     }
     
 }
-​
 let rootNode = Node<String>("Luba")
 let firstNode = Node<String>("Maitree")
 let secondNode = Node<String>("Brendon")
 let thirdNode = Node<String>("Yulia")
 let fourthNode = Node<String>("Cameron")
-​
+
 rootNode.next = firstNode
 firstNode.next = secondNode
 secondNode.next = thirdNode
 thirdNode.next = fourthNode
-​
+
 print(rootNode)
-​
+
 func reverseList<T>(_ node: Node<T>?) -> Node<T>? {
     // Base case
     guard let _ = node?.next else {
         return node
     }
-​
+
     // Progression toward base case
     let returnNode = reverseList(node?.next)
-​
     node?.next?.next = node
     node?.next = nil
-​
+
     return returnNode
 }
-​
-print(reverseList(rootNode)!)
-​
+
+ print(reverseList(rootNode)!)
+
+
 /*
  Luba.next != nil Pause
  Maitree.next != nil Pause
@@ -198,21 +193,13 @@ print(reverseList(rootNode)!)
  return Cameron
  Resume Luba.next.next (== Maitree.next) = Luba, Luba.next = nil, return Cameron
  */
-Collapse
 
 
-
-
-Yuliia Engman  6:19 PM
-Thank you.
-, Cameron!
-6:20
-Cameron, I did not attend class on Linked List and trying to work on it on my own right now. Any chance that you could share your class notes about Linked List?
-
-Cameron Rivera  6:51 PM
-Linked List notes
-Untitled
-import Foundation
-​
-/*
- Linked Lists:
+var myArray = [String]()
+myArray.append("BAnanas")
+myArray.append("Apples")
+let a = myArray.removeLast()
+print(myArray)
+let b = myArray.removeLast()
+let c = myArray.popLast()
+print(myArray)

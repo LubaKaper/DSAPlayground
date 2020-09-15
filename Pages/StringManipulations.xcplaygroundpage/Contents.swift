@@ -87,14 +87,16 @@ let str = "racecare"
 func isPolindrome(str: String) -> Bool {
     var newStr = ""
     for char in str {
-        newStr = String(char) + newStr
+        newStr = String(char) + newStr// r + "", a + r, c+ar, e + car, c + ecar, a + cecar, r + acecar, e + racecar
         print(char)
         print(newStr)
     }
     if newStr == str {
         return true
-    } else {
-        return false
     }
+//    } else {
+//        return false
+//    }
+    return false
 }
 print(isPolindrome(str: str))
