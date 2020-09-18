@@ -25,5 +25,8 @@
         <page name='RecursionBinaryReversesLL'/>
         <page name='Mztrix'/>
         <page name='VariadicParametersInFunction'/>
+        <page name='In-OutParameters'/>
+        <page name='CallStack-Recursion'/>
+        <page name='LemonadeChange'/>
     </pages>
 </playground>

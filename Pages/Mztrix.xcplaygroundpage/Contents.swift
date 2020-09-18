@@ -16,7 +16,7 @@ func matrixSum(matrix: [[Int]]) -> Int {
     return 0
 }
 
-    let sumOfCorners = matrix[0][0] + matrix[0][input[0].count - 1] + matrix[input.count - 1][0] + matrix[input.count - 1][input[input.count - 1].count - 1]
+    let sumOfCorners = matrix[0][0] + matrix[0][matrix[0].count - 1] + matrix[matrix.count - 1][0] + matrix[matrix.count - 1][matrix[input.count - 1].count - 1]  // matrix[matrix.count - 1][matrix[0].count - 1] if we know for sure that matrix has equql heights/width
     
     
     let result = matrix.joined().reduce(0, +) - sumOfCorners
