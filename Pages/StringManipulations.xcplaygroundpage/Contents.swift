@@ -30,9 +30,13 @@ func countCharacters(_ words: [String], _ chars: String) -> Int {
   var charsDict = [Character: Int]()
   var sum = 0
   // "a", charsDict["a"] = 3
+    //[ c, r, w,c, a,a,]
   for char in chars {
     charsDict[char] = (charsDict[char] ?? 0) + 1
   }
+    print(charsDict)
+    
+    
   Outerloop: for word in words {
     guard word.count <= chars.count else {
       continue

@@ -28,5 +28,6 @@
         <page name='In-OutParameters'/>
         <page name='CallStack-Recursion'/>
         <page name='LemonadeChange'/>
+        <page name='MatrixSudoku'/>
     </pages>
 </playground>
