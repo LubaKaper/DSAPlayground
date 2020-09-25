@@ -29,5 +29,6 @@
         <page name='CallStack-Recursion'/>
         <page name='LemonadeChange'/>
         <page name='MatrixSudoku'/>
+        <page name='ShiftZeros'/>
     </pages>
 </playground>
