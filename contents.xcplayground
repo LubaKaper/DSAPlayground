@@ -30,5 +30,6 @@
         <page name='LemonadeChange'/>
         <page name='MatrixSudoku'/>
         <page name='ShiftZeros'/>
+        <page name='DiagonalSum'/>
     </pages>
 </playground>
